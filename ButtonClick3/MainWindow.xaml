@@ -1,0 +1,223 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Properties="clr-namespace:ButtonClick3.Properties" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" x:Class="ButtonClick3.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="786" Width="460" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/BGDarkGray.png"/>
+    </Window.Background>
+    <Grid x:Name="textBox2" IsEnabled="True" Margin="0,0,2,0" Height="790" Width="460" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <Grid.DataContext>
+            <Properties:Resources/>
+        </Grid.DataContext>
+        <TextBox HorizontalAlignment="Left" Height="255" Margin="30,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Grid.RowSpan="2">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/BlackFrame01.png"/>
+            </TextBox.Background>
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.255"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="255" Margin="29,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="381" Opacity="0" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="260" Margin="29,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="381" Opacity="0" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="169" Margin="30,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/BlackFrame02.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="169" Margin="29,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="381" Opacity="0" Grid.Row="1"/>
+        <TextBox Height="42" Margin="22,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" FontWeight="Medium" Padding="1,1,-3,1" HorizontalAlignment="Left" Foreground="White" BorderBrush="{x:Null}">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/RokugaSousa.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox Height="40" Margin="30,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="142" BorderBrush="{x:Null}" Grid.RowSpan="2">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagSettei.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button HorizontalAlignment="Left" Opacity="0.8" Margin="197,250,0,0" Width="213" Height="45" Click="Button_Click_1" FontWeight="Bold" FontSize="24" VerticalAlignment="Top" HorizontalContentAlignment="Center" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/TagZuke_1.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Button1" Opacity="1" HorizontalAlignment="Left" Height="37" Margin="195,193,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click"  BorderThickness="0" Padding="-2,1,1,1" BorderBrush="{x:Null}" >
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/RokugaKaishi.png"/>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Height="20" Margin="60,140,0,0" VerticalAlignment="Top" Width="90" SelectionChanged="ComboBox_SelectionChanged" RenderTransformOrigin="0.542,2.2" SelectedIndex="0" Background="#FFEAEAEA" Grid.Row="1"/>
+        <TextBox x:Name="textBox1"   HorizontalAlignment="Left" Height="25" Margin="56,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339" BorderThickness="2" TextChanged="TextBox1_TextChanged_1" Grid.Row="1" FontSize="10" BorderBrush="{x:Null}" >
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagTourokuForm-1.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <ComboBox x:Name="comboBox3" Height="20" Margin="60,100,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" SelectedIndex="0" SelectionChanged="ComboBox3_SelectionChanged" Background="#FFEAEAEA" Grid.Row="1">
+            <ListBoxItem Content="チームA"/>
+            <ListBoxItem Content="チームB"/>
+        </ComboBox>
+        <Button Height="30" Opacity="1" Margin="332,45,65,0" Click="Button_Click_6" VerticalAlignment="Top" HorizontalContentAlignment="Left" RenderTransformOrigin="0.45,0.5" BorderBrush="{x:Null}" Grid.Row="1" >
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/Reset.png"/>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="comboBox4" HorizontalAlignment="Left" Height="20" Margin="60,189,0,0" VerticalAlignment="Top" Width="90" SelectionChanged="ComboBox_SelectionChanged_1" SelectedIndex="0" Background="#FFEAEAEA" Grid.Row="1">
+            <ListBoxItem Content="1回"/>
+            <ListBoxItem Content="2回"/>
+            <ListBoxItem Content="3回"/>
+            <ListBoxItem Content="4回"/>
+            <ListBoxItem Content="5回"/>
+            <ListBoxItem Content="6回"/>
+            <ListBoxItem Content="7回"/>
+            <ListBoxItem Content="8回"/>
+            <ListBoxItem Content="9回"/>
+            <ListBoxItem Content="10回"/>
+            <ListBoxItem Content="11回"/>
+            <ListBoxItem Content="12回"/>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="22,10,0,0" VerticalAlignment="Top" Width="395" BorderBrush="{x:Null}" SelectionBrush="#FF060606">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/title.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="Button2" Opacity="1" Content="" HorizontalAlignment="Left" Margin="315,193,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click_3" Height="37" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" IsEnabled="False" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.526,0.865">
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/RokugaTeishi.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="15" Margin="60,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" TextChanged="TextBox_TextChanged_2" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagHeaderHome.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="60,120,0,0" TextWrapping="Wrap" Text="名前" VerticalAlignment="Top" Width="90" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="15" Margin="60,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.533,-0.652" BorderBrush="Black" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagHeaderInning.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="15" Margin="180,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagHeaderCount.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <ComboBox x:Name="comboBox5" HorizontalAlignment="Left" Margin="180,189,0,0" VerticalAlignment="Top" Width="90" SelectedIndex="0" IsTabStop="False" Height="20" SelectionChanged="ComboBox5_SelectionChanged" Background="#FFEAEAEA" Grid.Row="1">
+            <ListBoxItem Content="0-0"/>
+            <ListBoxItem Content="0-1"/>
+            <ListBoxItem Content="0-2"/>
+            <ListBoxItem Content="1-0"/>
+            <ListBoxItem Content="1-1"/>
+            <ListBoxItem Content="1-2"/>
+            <ListBoxItem Content="2-0"/>
+            <ListBoxItem Content="2-1"/>
+            <ListBoxItem Content="2-2"/>
+            <ListBoxItem Content="3-0"/>
+            <ListBoxItem Content="3-1"/>
+            <ListBoxItem Content="3-2"/>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Height="15" Margin="304,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.533,0.13" BorderBrush="Black" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagHeaderKyuusoku.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <ComboBox x:Name="comboBox6" HorizontalAlignment="Left" Margin="304,189,0,0" VerticalAlignment="Top" Width="85" SelectedIndex="0" Height="20" SelectionChanged="ComboBox6_SelectionChanged" Background="#FFEAEAEA" Grid.Row="1">
+            <ListBoxItem Content="80km"/>
+            <ListBoxItem Content="90km"/>
+            <ListBoxItem Content="100km"/>
+            <ListBoxItem Content="110km"/>
+            <ListBoxItem Content="120km"/>
+            <ListBoxItem Content="130km"/>
+            <ListBoxItem Content="140km"/>
+            <ListBoxItem Content="150km"/>
+        </ComboBox>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="44" Margin="160,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" TextChanged="TextBox_TextChanged" BorderThickness="2" BorderBrush="{x:Null}" FontSize="10" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagSearch01Form.png"/>
+            </TextBox.Background>
+        </TextBox>
+
+        <TextBox HorizontalAlignment="Left" Height="15" Margin="180,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.533,0.348" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagHeaderVisitor.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <ComboBox x:Name="comboBox7" Margin="180,100,0,0" VerticalAlignment="Top" SelectedIndex="0" HorizontalAlignment="Left" Width="90" Height="20" SelectionChanged="ComboBox7_SelectionChanged" Background="#FFEAEAEA" Grid.Row="1">
+            <ListBoxItem Content="チームB"/>
+            <ListBoxItem Content="チームA"/>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="180,120,0,0" TextWrapping="Wrap" Text="名前" VerticalAlignment="Top" Width="90" TextChanged="TextBox_TextChanged_1" Grid.Row="1"/>
+        <ComboBox x:Name="comboBox8" HorizontalAlignment="Left" Margin="180,140,0,0" VerticalAlignment="Top" Width="90" SelectedIndex="0" Height="20" SelectionChanged="ComboBox8_SelectionChanged" Background="#FFEAEAEA" Grid.Row="1"/>
+        <TextBox TextWrapping="Wrap" Margin="22,43,0,256" HorizontalAlignment="Left" Width="155" BorderBrush="{x:Null}">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/CameraSlect.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox Height="16" Margin="56,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" HorizontalAlignment="Left" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagTourokuInfo.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="30,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" RenderTransformOrigin="0.7,0.5" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagChushutsu.png" Stretch="Uniform"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="84" Margin="45,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" Background="#FFD5D5D6"/>
+        <RadioButton x:Name="radioButton2" Content="HS Cam （x 2）" Margin="56,100,295,223" />
+        <RadioButton x:Name="radioButton3" Content="HS Cam （x 4）" Margin="56,116,295,207"/>
+        <RadioButton x:Name="radioButton1" Content="NW Cam（x 1）" Checked="RadioButton_Checked" IsChecked="True" Margin="56,85,283,238"/>
+        <RadioButton x:Name="radioButton4" Content="HS Cam （x 5）" Margin="56,133,295,190" RenderTransformOrigin="0.495,0.944" />
+        <RadioButton x:Name="radioButton5" Content="HS Cam （x10）" Margin="56,150,295,173"/>
+        <RadioButton x:Name="radioButton6" Content="NW Cam + HS Cam (x 2)" HorizontalAlignment="Left" Margin="220,85,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton7" Content="NW Cam + HS Cam (x 4)" HorizontalAlignment="Left" Margin="220,101,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton8" Content="NW Cam + HS Cam (x 5)" HorizontalAlignment="Left" Margin="220,117,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="42" Margin="45,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagSearch01button.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <RadioButton x:Name="radioButton9" Content="NW Cam + HS Cam (x10)" HorizontalAlignment="Left" Margin="220,133,0,0" VerticalAlignment="Top"/>
+        <Button Content="" Opacity="0.1" HorizontalAlignment="Left" Margin="45,295,0,0" VerticalAlignment="Top" Width="115" Height="43" Click="Button_Click_4" BorderBrush="{x:Null}" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="38" Margin="45,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagSearch02button.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="" Opacity="0.1" HorizontalAlignment="Left" Margin="43,352,0,0" VerticalAlignment="Top" Width="95" Height="38" Click="Button_Click_2" BorderBrush="{x:Null}" Grid.Row="1"/>
+        <ComboBox x:Name="comboBox9" Opacity="1" HorizontalAlignment="Left" Margin="138,354,0,0" VerticalAlignment="Top" Width="124" Height="34" SelectedIndex="0" SelectionChanged="ComboBox9_SelectionChanged" BorderBrush="{x:Null}" Grid.Row="1" Foreground="{x:Null}">
+            <ComboBox.Background>
+                <ImageBrush ImageSource="Resources/TagSearch03Form-01.png"/>
+            </ComboBox.Background>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Height="38" Margin="290,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" BorderBrush="{x:Null}" Grid.Row="1">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resources/TagSearch04button.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="" HorizontalAlignment="Left" Opacity="0.1" Margin="290,352,0,0" VerticalAlignment="Top" Width="95" Height="38" Click="Button_Click_5" BorderBrush="{x:Null}" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="415" Opacity="0"/>
+        <TextBox HorizontalAlignment="Left" Height="41" Margin="20,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Opacity="0"/>
+        <TextBox HorizontalAlignment="Left" Height="67" Margin="20,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Opacity="0"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="29,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Opacity="0" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="30,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Opacity="0" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="30,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Opacity="0"/>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="59,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Opacity="0" Grid.Row="1"/>
+        <TextBox Height="20" Margin="304,166,60,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0" Grid.Row="1"/>
+        <TextBox Height="20" Margin="180,166,184,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0" Grid.Row="1"/>
+        <TextBox Height="20" Margin="60,166,304,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0" Grid.Row="1"/>
+        <TextBox Height="20" Margin="180,77,184,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0" Grid.Row="1"/>
+        <TextBox Height="20" Margin="59,77,305,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0" Grid.Row="1"/>
+    </Grid>
+</Window>
